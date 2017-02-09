@@ -53,10 +53,11 @@ public class AppBasics {
 				}
 				isNotValid = false;
 			} catch (NumberFormatException e) {
-				// TODO Give an error message
+				// Give an error message
 				System.out.println("You have not entered a correct number value");
 			} catch (NumberNotInRangeException e) {
-				System.out.println("You have not entered a number within the range of" + min + "and" + max + ".");
+				System.out.println("You have not entered a number within the range of"
+						+ min + "and" + max + ".");
 			}
 		}
 		return result;

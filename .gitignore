@@ -214,4 +214,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#test-output directory
+test-output/
+
 # End of https://www.gitignore.io/api/windows,linux,macos
+
