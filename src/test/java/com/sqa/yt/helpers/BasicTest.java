@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.safari.*;
 import org.testng.annotations.*;
 
-public class BasicTest {
+public class BasicTest extends Core {
 
 	private String baseUrl;
 

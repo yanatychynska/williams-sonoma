@@ -1,0 +1,11 @@
+2017-02-11 17:10:42 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:18:41 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:22:16 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:24:59 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:26:10 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:27:24 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:27:50 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:38:36 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:39:53 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:42:17 INFO  BasicTest:24 - Created BasicTest object through constructor
+2017-02-11 17:43:03 INFO  BasicTest:24 - Created BasicTest object through constructor

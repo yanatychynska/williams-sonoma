@@ -345,10 +345,13 @@ public class DataHelper {
 				break;
 			case DOUBLE:
 				data = Double.parseDouble(parameter);
+				break;
 			case FLOAT:
 				data = Float.parseFloat(parameter);
+				break;
 			case INT:
 				data = Integer.parseInt(parameter);
+				break;
 			case BOOLEAN:
 				if (parameter.equalsIgnoreCase("true")
 						| parameter.equalsIgnoreCase("false")) {
