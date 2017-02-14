@@ -6,6 +6,7 @@ import org.apache.log4j.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.ie.*;
 import org.openqa.selenium.safari.*;
 import org.testng.annotations.*;
 
@@ -44,7 +45,7 @@ public class BasicTest extends Core {
 		this.log = log;
 	}
 
-	@BeforeMethod(enabled = false)
+	@BeforeMethod(groups = "chrome")
 	public void setupChrome() {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		this.driver = new ChromeDriver();
@@ -52,9 +53,17 @@ public class BasicTest extends Core {
 		this.driver.get(this.baseUrl);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups = "firefox")
 	public void setupFirefox() {
 		this.driver = new FirefoxDriver();
+		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		this.driver.get(this.baseUrl);
+	}
+
+	@BeforeMethod(enabled = false)
+	public void setupIE() {
+		System.setProperty("webdriver.ie.driver", "drivers/ie.exe");
+		this.driver = new InternetExplorerDriver();
 		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		this.driver.get(this.baseUrl);
 	}
